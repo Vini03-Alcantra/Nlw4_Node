@@ -30,7 +30,7 @@ class SendMailService {
             title: subject,
             name: variables.name,
             link: variables.link,
-            user_id: variables.user_id
+            id: variables.id
         })
 
         const message = await this.client.sendMail({
